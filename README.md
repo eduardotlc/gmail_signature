@@ -1,70 +1,156 @@
-# Gmail signature example
+<head>
+  <!-- PAGE INFO -->
+  <meta charset="UTF-8" />
+  <meta content="text/html" http-equiv="Content-Type" />
+  <link rel="shortcut icon" href="https://img.icons8.com/fluency/50/000000/autograph.png" type="image/x-icon" />
+  <title>Email Signature</title>
+</head>
 
-- Html example of gmail signature, may be editted to be used as a template
-
-- Based on [gmail-signature](https://github.com/skarif2/gmail-signature/tree/master)
-
-- Credits to original creator [Sk Arif](https://github.com/skarif2)
-
-## Setup Signature
-
-- Clone the repo
-
-```bash
-git clone https://github.com/eduardotlc/gmail_signature/tree/main
-```
-- Open the directory and modify the [html file](./index.html) to your liking
-
-- Open [index.html](./index.html) in any browser
-
-![Original example](./.readme/ex1.png)
-
-- Select everything on the screen (Or use Ctr+a) and copy it
-
-![Copy example](./.readme/ex2.png)
-
-- Open your gmail account, press the settings icon (⚙️ ) and go to see all settings
-
-![Settings](./.readme/ex3.png)
-
-- In the general tab, scroll down until you can see the signature field, and paste the previously copied signature
-
-![Pasting](./.readme/ex4.png)
-
-- Scroll down and save changes that you just made
-
-## Notes
-
-- There is a limit of 10,000 characters in Gmail Signature. Make sure you don't add too much stuff
-
-Images can be converted to base64 to be embeded in case of not being avaialable online,
-to do so for an svg file for example, run:
-
-```bash
-base64 <path/to/image.svg>
-```
-
-and then on [index.html](./index.html), edit the desired image source with the base64 given output, substituting <generated_bse64_output_letters> like this:
-
-```html
-<a href="https://www.link_to_desired_target_site.com" target="_blank">
-  <img alt="Image name"
-       style="width: 120px; height: 120; border-radius: 60px; border: 0;"
-       src="data:image/svg+xml;base64,<generated_base64_output_letters>"
-  >
-</a>
-```
-
-Be carefull when doing this, since base64 codes can be really long and break the mentioned characters limit.
-
-- Paths to local image files will not work when you paste your signature in Gmail. The used images need to be
-in base64 format or an internet available link (this last is the used in this repo example, with the here present images)
-
-- Only one color is given to each html element on [index.html](./index.html), so it is good practice to check the contrast
-of chosen colors in white background, as so in black background.
-
-## License
-
-This repo available under the [MIT license](https://github.com/skarif2/gmail-signature/blob/master/LICENSE).
-
----
+<body style="font-family: Helvetica, sans-serif;">
+  <!-- CONTAINER -->
+  <table style="font-family: Helvetica, sans-serif; cellpadding: 0; margin:auto">
+    <tbody>
+      <tr>
+        <!-- ==================== LEFT IMAGE ==================== -->
+        <td style="width: 150px; font-family: Verdana; text-align: center; padding: 20px">
+          <!-- Photo -->
+          <a href="https://www.iq.usp.br" target="_blank">
+            <img alt="Photograph"
+                 style="width: 140px; height: 200px; border-radius: 60px; border: 0;"
+                 src="https://raw.githubusercontent.com/eduardotlc/gmail_signature/e633de430c8eae0a5d1896fde30aa591d5678566/iq_2.svg"
+            >
+          </a>
+        </td>
+        <!-- ==================== DIVIDER ==================== -->
+        <!--<td style="height: 140px; border-left: thin solid #4f6ac3; padding-right: 15px;"></td>-->
+        <!--<td style="font-family: inherit; padding: 8px; margin: auto;">-->
+        <!-- ==================== SECTION #2 ==================== -->
+        <td>
+        <table style="font-family: Helvetica, sans-serif; cellspacing: 3px; width: 180px; margin: auto">
+          <tbody>
+            <!-- I. Name & Job -->
+            <tr>
+              <td style="font-family: inherit; padding: 3px 3px; vertical-align: center; width: 250px">
+                <strong>
+                  <a style="font-family: inherit; color: #23279f; font-size: 14pt; text-decoration: none;"
+                     href="http://www.skarif2.io/"
+                     target="_blank"
+                  >
+                    Eduardo Campos
+                  </a>
+                  </br>
+                </strong>
+                <a style="font-family: inherit; color:#666666; font-size: 10pt; text-decoration: none;"
+                   href="http://www.skarif2.io/"
+                   target="_blank"
+                >
+                  Master's Degree Student
+                </a>
+              </td>
+            </tr>
+            <!-- II. Company -->
+            <tr>
+              <td style="font-family: inherit; padding-bottom: 6px; vertical-align: top;" valign="top">
+                <strong>
+                  <a style="font-family: inherit; color:#666666; font-size: 9.3pt; text-decoration: none;">
+                      <!-- href="https://invarianttele.com/" -->
+                      <!-- target="_blank" -->
+                    Biomolecular Damage
+                  </a>
+                </strong>
+                <a style="font-family: inherit; color: #5773b9; font-size: 10pt; text-decoration: none;"
+                   href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiPgM2zr5WCAxXTDtQKHfiTDlwQFnoECB0QAQ&url=http%3A%2F%2Fwww.iq.usp.br%2Fportaliqusp%2F%3Fq%3Dpt-br%2Fusers%2Fpaolo-di-mascio&usg=AOvVaw3UZ1Mvg_Z03LoMys0FP5uz&opi=89978449"
+                   target="_blank"
+                >
+                  &bull; Lab
+                </a>
+              </td>
+            </tr>
+            <!-- III. Contacts -->
+            <tr>
+              <td style="font-family: inherit; font-size: 9pt; padding-bottom: 6px; line-height: 18px; vertical-align: top; width: 165px;" valign="top">
+                <!-- Phone -->
+                <span style="font-family: inherit; color: #1e6e9c;">m &sdot; </span>
+                <a style="font-family: inherit; text-decoration: none; color: #666666;"
+                   href="tel:+8801719286264"
+                >
+                  +55 11 95161-2132
+                </a>
+                <br>
+                <!-- Email -->
+                <span style="font-family: inherit; color: #1e6e9c;">e &sdot; </span>
+                <a style="font-family: inherit; text-decoration: none; color: #666666;"
+                   href="mailto:eduardotcampos@usp.br"
+                >
+                  eduardotcampos@usp.br
+                </a>
+                <br>
+                <!-- Adress -->
+                <span style="font-family: inherit; color: #1e6e9c">a &sdot; </span>
+                <a style="font-family: inherit; text-decoration: none; color: #666666;"
+                   href="https://maps.google.com/?q=-23.5653353, -46.7258011"
+                   target="_blank"
+                >
+                  IQ-USP, sala 1223
+                </a>
+              </td>
+            </tr>
+            <!-- IV. Links -->
+            <tr>
+              <td style="font-family: inherit; width: 140px; padding-top: 4px; padding-left: 0; text-align: left; valign=left width=140"</td>
+                <!-- Lattes -->
+                <span>
+                  <a style="text-decoration: none; padding-right: 4px;"
+                     href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do"
+                     target="_blank"
+                  >
+                    <img alt="Lattes"
+                         style="width: 18px; height: 18px;"
+                         src="https://raw.githubusercontent.com/eduardotlc/gmail_signature/e633de430c8eae0a5d1896fde30aa591d5678566/lattesg.svg"
+                    >
+                  </a>
+                </span>
+                <!-- GitHub -->
+                <span>
+                  <a style="text-decoration: none; padding: 0 4px;"
+                     href="https://github.com/eduardotlc"
+                     target="_blank"
+                  >
+                    <img alt="github"
+                         style="width: 18px; height: 18px;"
+                         src="https://raw.githubusercontent.com/eduardotlc/gmail_signature/e633de430c8eae0a5d1896fde30aa591d5678566/githubg.svg"
+                    >
+                  </a>
+                </span>
+                <!-- Researchgate -->
+                <span>
+                  <a style="text-decoration: none; padding: 0 4px;"
+                     href="https://www.researchgate.net/profile/Eduardo-Campos-23"
+                     target="_blank"
+                  >
+                    <img alt="Researchgate"
+                         style="width: 18px; height: 18px;"
+                         src="https://raw.githubusercontent.com/eduardotlc/gmail_signature/e633de430c8eae0a5d1896fde30aa591d5678566/researchgateg.svg"
+                    >
+                  </a>
+                </span>
+                <!-- Redoxoma -->
+                <span>
+                  <a style="text-decoration: none; padding: 0 4px;"
+                     href="https://redoxoma.iq.usp.br/"
+                     target="_blank"
+                  >
+                    <img alt="Redoxoma"
+                         style="width: 18px; height: 18px;"
+                         src="https://raw.githubusercontent.com/eduardotlc/gmail_signature/e633de430c8eae0a5d1896fde30aa591d5678566/redoxomag2.svg"
+                    >
+                  </a>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </tr>
+    </tbody>
+  </table>
+</body>
